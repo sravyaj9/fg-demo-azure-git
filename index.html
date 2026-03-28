@@ -1,1 +1,43 @@
-<h1>My First Deployment via Git</h1>
+echo '<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning Journey</title>
+    <style>
+        body { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; background-color: #f3f4f6; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 20px; }
+        .container { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); max-width: 600px; width: 100%; border-top: 8px solid #0078d4; }
+        h1 { color: #0078d4; text-align: center; }
+        .section-title { font-weight: bold; color: #333; margin-top: 25px; border-bottom: 2px solid #eee; padding-bottom: 5px; display: flex; align-items: center; }
+        .quote-box { background: #f9f9f9; padding: 20px; border-left: 5px solid #0078d4; font-style: italic; color: #444; margin: 15px 0; line-height: 1.6; }
+        .milestone { background: #e7f3ff; padding: 15px; border-radius: 8px; margin: 10px 0; border: 1px dashed #0078d4; color: #005a9e; font-weight: 500; }
+        .badge { background: #dff6dd; color: #107c10; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; }
+        footer { text-align: center; margin-top: 30px; font-size: 0.8rem; color: #888; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="text-align: center;"><span class="badge">Cloud Portfolio</span></div>
+        <h1>My Learning Journey</h1>
+
+        <div class="section-title">Step 1: The Beginning</div>
+        <div class="milestone">
+            ✅ My First Deployment via Git (Success!)
+        </div>
+
+        <div class="section-title">Step 2: Azure Progress</div>
+        <div class="quote-box">
+            "The Azure classes have been exceptional. You made even the toughest Azure topics feel easy to grasp. Thank you for clearing up all my doubts and making the learning process so smooth."
+        </div>
+
+        <footer>
+            Built on March 2026 using Git Bash & GitHub Pages
+        </footer>
+    </div>
+</body>
+</html>' > index.html
+
+# Now Push the update
+git add .
+git commit -m "Merged first deployment and Azure testimonial"
+git push
